@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #050507;
+    color: #d8d1c5;
+    font-family: 'Pixelify Sans', monospace;
+    -webkit-font-smoothing: none;
+    image-rendering: pixelated;
+  }
+}
+
+.font-pixel {
+  font-family: 'Pixelify Sans', monospace;
+}
+
+.font-pixel-title {
+  font-family: 'Press Start 2P', 'Pixelify Sans', monospace;
+}
+
+.pixelated {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.pixel-border {
+  box-shadow:
+    inset -2px -2px 0px 0px #0c0c0f,
+    inset 2px 2px 0px 0px #3a342c,
+    0 0 0 2px #070709;
+}
+
+.pixel-border-lit {
+  box-shadow:
+    inset -2px -2px 0px 0px #2b2113,
+    inset 2px 2px 0px 0px #e8b35a,
+    0 0 0 2px #090807;
+}
+
+@keyframes dustFloat {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translateY(-6px) translateX(3px);
+    opacity: 0.55;
+  }
+}
+
+@keyframes signSway {
+  0%, 100% {
+    transform: rotate(-1.15deg);
+  }
+  50% {
+    transform: rotate(1.15deg);
+  }
+}
