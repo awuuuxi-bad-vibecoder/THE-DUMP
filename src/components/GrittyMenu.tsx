@@ -559,6 +559,11 @@ export const GrittyMenu: React.FC<GrittyMenuProps> = ({
           )}
         </div>
       </div>
+
+      {/* Build version badge */}
+      <div className="pointer-events-none absolute bottom-3 right-4 z-10 text-[11px] tracking-[0.18em] text-[#736b61]/80 drop-shadow-[1px_1px_0_#000]">
+        v1.0
+      </div>
     </div>
   );
 };
